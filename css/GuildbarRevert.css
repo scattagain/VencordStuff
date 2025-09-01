@@ -138,25 +138,9 @@ nav[class*="guilds_"] {
         
         background-color: var(--bg-mod-subtle);
     }
-
-    [class*="closedFolderIconWrapper__"] {
-        gap: initial;
-    }
-
-    [class*="listItem__"] {
-        margin-bottom: 8px;
-        height: min-content;
-    }
-
-    [class*="stack_"] {
-        gap: 0 !important;
-    }
-
-    #guild-list-unread-dms {
-        margin-top: 0 !important;
-        > div {
+    
+    #guild-list-unread-dms > div {
             height: var(--guildbar-avatar-size) !important;
-            margin-bottom: 8px;
         }
     }
 
@@ -168,16 +152,7 @@ nav[class*="guilds_"] {
 
         [class*="stack_"] {
             height: auto !important;
-            :last-child {
-                margin-bottom: 0;
-            }
         }
-
-        > [class*="listItem__"] {
-            margin-bottom: 0;
-        }
-
-        margin-bottom: 8px;
     }
 
     [id^="folder-items-"] {
