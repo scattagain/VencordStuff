@@ -41,8 +41,13 @@ nav[class*="-guilds "] {
     }
 
     [class*="-dragOver"] {
-        &, &:before {
-            top: calc(var(--guildbar-avatar-size) / 2 + 8px);
+        &[class*="-target"]::before {
+            width: 100%;
+            left: calc(var(--guildbar-avatar-size) / 4);
+        }
+
+        &[class*="-centerTarget"]::before {
+            top: calc(var(--guildbar-avatar-size) / 2 + 8px)
         }
     }
 
