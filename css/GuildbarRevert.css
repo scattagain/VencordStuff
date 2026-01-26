@@ -12,7 +12,7 @@
     );
 }
 
-nav[class*="-guilds"] {
+nav[class*="guilds_"] {
     /* Uncomment if you changed up your nameplate */
     /* margin: 0;
     [class*="sidebar_"]::after {
@@ -25,50 +25,52 @@ nav[class*="-guilds"] {
     }
 
     defs, 
-    [class*="-blobContainer"],
-    [class*="-listItemWrapper"],
-    [class*="-wrapper"],
-    [class*="-tutorialContainer"] [class*="-wrapper"],
-    svg[class*="-placeholderMask"],
-    svg:not([class*="-placeholderMask"]) > foreignObject {
+    [class*="blobContainer_"],
+    [class*="listItemWrapper__"],
+    [class*="wrapper_"]:not([class*="listItem__"] > [class*="wrapper_"]),
+    [class*="tutorialContainer__"] [class*="wrapper_"],
+    svg[class*="placeholderMask__"],
+    svg:not([class*="placeholderMask__"]) > foreignObject {
         width: var(--guildbar-avatar-size) !important;
         height: var(--guildbar-avatar-size) !important;
     }
 
-    [class*="-dragInner"] {
+    [class*="dragInner__"] {
         width: 40px;
         height: 40px;
     }
 
-    [class*="-dragOver"] {
-        &[class*="-target"]::before {
+    [class*="dragOver_"] {
+        &[class*="target_"]::before {
             width: 100%;
             left: calc(var(--guildbar-avatar-size) / 4);
         }
 
-        &[class*="-centerTarget"]::before {
+        &[class*="centerTarget_"]::before {
             top: calc(var(--guildbar-avatar-size) / 2 + 8px)
         }
     }
 
-    [class*="-childWrapper "]>svg {
+    [class*="childWrapper__"]>svg {
         width: calc(var(--guildbar-avatar-size) - 18px);
         height: calc(var(--guildbar-avatar-size) - 18px);
     }
 
-    [class*="-childWrapper"],
-    [class*="-childWrapper"] img,
-    img[class*="-icon"], [class*="-folderPreviewGuildIcon"], /* allat cause of -iconBadge */
-    [class*="-circleIconButton"] {
+    [class*="childWrapper__"],
+    [class*="childWrapper__"] img,
+    img[class*="icon_"], 
+    [class*="folderPreviewGuildIcon__"],
+    [class*="circleIconButton__"] {
         border-radius: 50% !important;
         transition: border-radius 150ms linear;
 
-        [class*="-selected"] &, &[class*="-selected"] {
+        [class*="selected__"] &, &[class*="selected__"] {
             border-radius: 27% !important;
         }
     }
 
-    [class*="-shiftSVG"] {
+
+    [class*="shiftSVG_"] {
         top: 0px;
         left: 0px;
 
@@ -80,7 +82,7 @@ nav[class*="-guilds"] {
     mask {
         --badge-offset: calc(var(--guildbar-avatar-size) - 40px);
 
-        &:not([class*="-folderHeader"] mask) {
+        &:not([class*="folderHeader__"] mask) {
             use[href$="-lower_badge_masks"] {
                 translate: var(--badge-offset) var(--badge-offset);
             }
@@ -95,22 +97,22 @@ nav[class*="-guilds"] {
         }
     }
 
-    [class*="-folderPreviewWrapper"] {
+    [class*="folderPreviewWrapper__"] {
         display: flex;
         justify-content: center;
         align-items: center;
 
-        [class$="-folderPreview"] {
+        [class*="folderPreview__"] {
             width: calc(var(--guildbar-folder-size) * (2/3) + var(--custom-folder-preview-gap));
             height: calc(var(--guildbar-folder-size) * (2/3) + var(--custom-folder-preview-gap));
         }
     }
 
-    [class*="-iconSizeMini "] {
+    [class*="iconSizeMini_"] {
         width: calc(var(--guildbar-folder-size) / 3);
         height: calc(var(--guildbar-folder-size) / 3);
 
-        [class*="-acronym"] {
+        [class*="acronym_"] {
             line-height: calc(var(--guildbar-folder-size) / 3);
         }
 
@@ -125,15 +127,15 @@ nav[class*="-guilds"] {
         }
     }
 
-    [class*="-folderButton"] {
+    [class*="folderButton__"] {
         overflow: visible;
     }
 
-    [class*="-folderHeader"] {
+    [class*="folderHeader__"] {
         --guildbar-avatar-size: var(--guildbar-folder-size);
     }
     
-    [class*="-folderIcon"] {
+    [class*="folderIcon__"] {
         svg {
             width: 24px !important;
             height: 24px !important;
@@ -146,13 +148,13 @@ nav[class*="-guilds"] {
         height: var(--guildbar-avatar-size) !important;
     }
 
-    [class*="-isExpanded"] {
-        [class*="-folderGroupBackground"] {
+    [class*="isExpanded__"] {
+        [class*="folderGroupBackground__"] {
             border-bottom-left-radius: 24px;
             border-bottom-right-radius: 24px;
         }
 
-        [class*="-stack"] {
+        [class*="stack_"] {
             height: auto !important;
         }
     }
