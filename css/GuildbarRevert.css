@@ -85,6 +85,11 @@ nav[class*="guilds_"] {
         use[href$="-blob_mask"] {
             scale: calc(var(--blob-scale) / 40);
         }
+        
+        rect {
+            width: 48px;
+            height: 48px;
+        }
     }
 
     [class*="folderPreviewWrapper__"] {
