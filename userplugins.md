@@ -1,0 +1,1 @@
+[BetterMessageActions](https://github.com/scattagain/betterMessageActions): Makes s/search/replace and +:emoji: invoke on the message you're replying to <sub><sup>check out [Vendicated/Vencord#4672](https://github.com/Vendicated/Vencord/pull/4672)</sub></sup>
