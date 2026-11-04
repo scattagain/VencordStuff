@@ -98,8 +98,10 @@ nav[class*="guilds_"] {
         align-items: center;
 
         [class*="folderPreview__"] {
+            --custom-folder-preview-gap: 4px;
             width: calc(var(--guildbar-folder-size) * (2/3) + var(--custom-folder-preview-gap));
             height: calc(var(--guildbar-folder-size) * (2/3) + var(--custom-folder-preview-gap));
+            gap: var(--custom-folder-preview-gap);
         }
     }
 
