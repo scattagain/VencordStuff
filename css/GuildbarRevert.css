@@ -21,15 +21,15 @@ nav[class*="guilds_"] {
     
     defs, 
     [class*="blobContainer_"],
-    [class*="listItemWrapper__"],
-    [class*="wrapper_"]:not([class*="listItem__"] > [class*="wrapper_"]),
-    svg[class*="placeholderMask__"],
-    svg:not([class*="placeholderMask__"]) > foreignObject {
+    [class*="listItemWrapper_"],
+    [class*="wrapper_"]:not([class*="listItem_"] > [class*="wrapper_"]),
+    svg[class*="placeholderMask_"],
+    svg:not([class*="placeholderMask_"]) > foreignObject {
         width: var(--guildbar-avatar-size) !important;
         height: var(--guildbar-avatar-size) !important;
     }
 
-    [class*="dragInner__"] {
+    [class*="dragInner_"] {
         width: 40px;
         height: 40px;
     }
@@ -38,24 +38,24 @@ nav[class*="guilds_"] {
         top: calc(var(--guildbar-avatar-size) / 2 + 8px)
     }
 
-    [class*="childWrapper__"]>svg {
+    [class*="childWrapper_"]>svg {
         width: calc(var(--guildbar-avatar-size) - 18px);
         height: calc(var(--guildbar-avatar-size) - 18px);
     }
 
-    [class*="childWrapper__"],
-    [class*="childWrapper__"] img,
+    [class*="childWrapper_"],
+    [class*="childWrapper_"] img,
     [class*="icon_"],
-    [class*="circleIconButton__"] {
+    [class*="circleIconButton_"] {
         border-radius: 50% !important;
         transition: border-radius 150ms linear;
     }
 
-    [class*="selected__"] {
-        [class*="childWrapper__"],
-        [class*="childWrapper__"] img,
+    [class*="selected_"] {
+        [class*="childWrapper_"],
+        [class*="childWrapper_"] img,
         [class*="icon_"],
-        &[class*="circleIconButton__"] {
+        &[class*="circleIconButton_"] {
             border-radius: 27% !important;
         }
     }
@@ -92,12 +92,12 @@ nav[class*="guilds_"] {
         }
     }
 
-    [class*="folderPreviewWrapper__"] {
+    [class*="folderPreviewWrapper_"] {
         display: flex;
         justify-content: center;
         align-items: center;
 
-        [class*="folderPreview__"] {
+        [class*="folderPreview_"] {
             --custom-folder-preview-gap: 4px;
             width: calc(var(--guildbar-folder-size) * (2/3) + var(--custom-folder-preview-gap));
             height: calc(var(--guildbar-folder-size) * (2/3) + var(--custom-folder-preview-gap));
@@ -124,15 +124,15 @@ nav[class*="guilds_"] {
         }
     }
 
-    [class*="folderButton__"] {
+    [class*="folderButton_"] {
         overflow: visible;
     }
 
-    [class*="folderHeader__"] {
+    [class*="folderHeader_"] {
         --guildbar-avatar-size: var(--guildbar-folder-size);
     }
     
-    [class*="folderIcon__"] {
+    [class*="folderIcon_"] {
         svg {
             width: 24px !important;
             height: 24px !important;
@@ -145,8 +145,8 @@ nav[class*="guilds_"] {
         height: var(--guildbar-avatar-size) !important;
     }
 
-    [class*="isExpanded__"] {
-        [class*="folderGroupBackground__"] {
+    [class*="isExpanded_"] {
+        [class*="folderGroupBackground_"] {
             border-bottom-left-radius: 24px;
             border-bottom-right-radius: 24px;
         }
